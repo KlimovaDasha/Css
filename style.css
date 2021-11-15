@@ -1,0 +1,224 @@
+
+h1 {
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.square_first {
+  width: 100px;
+  height: 100px;
+  margin-left: 100px;
+  animation-iteration-count: infinite;
+  background-color: green;
+  border-radius: 5px;
+  animation-name: example;
+  animation-duration: 3s;
+}
+
+@keyframes example {
+  from {background-color: green;}
+  to {background-color: yellow;}
+}
+
+.square_second {
+  animation-name: square_second;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+/*animation-delay: 2s;*/
+  width: 100px;
+  height: 100px;
+  margin-left: 100px;
+  border-radius: 5px;
+  background-color: brown;
+  position: relative;
+}
+
+@keyframes square_second {
+  0%   {background-color:brown; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:50px;}
+  75%  {background-color:pink; left:0px; top:50px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+.square_third {
+  animation-name: square_third;
+  animation-duration: 4s;
+  border-radius: 5px;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  width: 150px;
+  height: 150px;
+  margin-left: 100px;
+  background-color: purple;
+  position: relative;
+}
+
+@keyframes square_third {
+  0%   {background-color:purple; left:0px; top:0px;}
+  15%  {background-color:blue; left:0px; top:200px;}
+  40%  {background-color:yellow; left:200px; top:200px;}
+  100%  {background-color:pink; left:0px; top:0px;}
+}
+
+.fourth_h {
+  margin-top: 200px;
+}
+
+  .square_fourth {
+    animation-name: square_fourth;
+    animation-duration: 4s;
+    border-radius: 5px;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    width: 100px;
+    height: 200px;
+    margin-left: 100px;
+    background-color: red;
+    position: relative;
+    animation-direction: alternate;
+  }
+
+@keyframes square_fourth {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:purple; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:yellow; left:0px; top:200px;}
+    100%  {background-color:pink; left:0px; top:0px;}
+}
+
+.square_fifth {
+  animation-name: square_fifth;
+  animation-duration: 4s;
+  border-radius: 5px;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  width: 150px;
+  height: 150px;
+  margin-left: 100px;
+  background-color: pink;
+  font-size: 30px;
+  position: relative;
+}
+
+.square_fifth_2 {
+  animation-name: square_fifth_2;
+  animation-duration: 4s;
+  border-radius: 5px;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  width: 150px;
+  height: 150px;
+  margin-left: 100px;
+  background-color: pink;
+  font-size: 30px;
+  position: relative;
+}
+
+.square_fifth_3 {
+  animation-name: square_fifth_3;
+  animation-duration: 4s;
+  border-radius: 5px;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  width: 150px;
+  height: 150px;
+  margin-left: 100px;
+  background-color: pink;
+  font-size: 30px;
+  position: relative;
+}
+
+@keyframes square_fifth {
+    from {left: 0px;}
+    to {left: 300px;}
+}
+
+@keyframes square_fifth_2 {
+    from {left: 0px;}
+    to {left: 300px;}
+}
+
+@keyframes square_fifth_3 {
+    from {left: 0px;}
+    to {left: 300px;}
+}
+
+.square_sixth {
+  animation-name: square_sixth;
+  animation-duration: 2s;
+  border-radius: 5px;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  width: 150px;
+  height: 150px;
+  margin-left: 100px;
+  background-color: black;
+  position: relative;
+  animation-direction: alternate;
+}
+
+@keyframes square_sixth {
+    0% {left:0px;}
+    50% {border-radius:100px;}
+    100% {left:500px;}
+}
+
+.square_seventh {
+  display: block;
+  transform: scale(1, 1.5);
+  animation-name: square_seventh;
+  animation-duration: 2s;
+  border-radius: 100px;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  width: 150px;
+  height: 150px;
+  margin-left: 100px;
+  background-color: green;
+  position: relative;
+}
+
+@keyframes square_seventh {
+    0% {left:0px; transform: scale(1, 1);}
+    50% {transform: scale(1, 1.5);}
+    100% {left:500px; transform: scale(1, 1);}
+}
+
+.square_eighth {
+  display: block;
+  border-radius: 50px;
+  width: 150px;
+  height: 130px;
+  margin-left: 100px;
+  margin-top: 60px;
+  background-color: brown;
+  -webkit-transition: -webkit-transform 1s;
+}
+
+.square_eighth:hover {
+  -webkit-transform: rotate(360deg) translateZ(0);
+}
+
+.square_ninth {
+  width: 300px;
+  height: 300px;
+  margin-left: 100px;
+  margin-top: 80px;
+  background-color: gray;
+  transition-duration: 1s;
+  transition-property: background-color, transform;
+}
+
+.square_ninth:hover {
+  background: black;
+  transform: rotate(45deg);
+}
+
+.square_tenth {
+  width: 150px;
+  height: 150px;
+  margin-left: 100px;
+  margin-top: 60px;
+  background-color: pink;
+}
